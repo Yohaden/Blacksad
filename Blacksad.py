@@ -3,9 +3,9 @@
 # please see wiki
 # By Youenn Denis
 software_version = '0.21.0'
-print 'Blacksad project version' software_version
+print "Blacksad project v_%s" % software_version
 
-# © Youenn Denis - MAY 2015
+# (c) Youenn Denis - MAY 2015
 
 import smbus
 import sys
