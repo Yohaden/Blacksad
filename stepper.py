@@ -12,10 +12,10 @@ class Motor:
             GPIO.setup(p, GPIO.OUT)
             GPIO.output(p, 0)
 
-        self.P1 = pins[0]
-        self.P2 = pins[1]
-        self.P3 = pins[2]
-        self.P4 = pins[3]
+        self.P1 = pins[31]
+        self.P2 = pins[33]
+        self.P3 = pins[35]
+        self.P4 = pins[37]
 
         self.deg_per_step = 5.625 / 64
         self.steps_per_rev = int(360 / self.deg_per_step)  # 4096
