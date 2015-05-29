@@ -48,7 +48,8 @@ StepCounter = 0
 while True:
 
   for pin in range(0, 4):
-    xpin = StepPins[pin]print StepCounter
+    xpin = StepPins[pin]
+    print StepCounter
     print pin
     if Seq[StepCounter][pin]!=0:
       print " Step %i Enable %i" %(StepCounter,xpin)
