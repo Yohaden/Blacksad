@@ -39,4 +39,4 @@ try:
 
 except KeyboardInterrupt:
         GPIO.cleanup()
-        print "GoodBye"
+        print "   !!!!Ctrl C detected !!!!! GoodBye"
