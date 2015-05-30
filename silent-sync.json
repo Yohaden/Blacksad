@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "host": "192,168,1,39",
+  "port": 22,
+  "username": "pi",
+  "remoteDir": "/home/Blacksad",
+  "exclude": [
+   "/someDir"
+  ],
+  "include": [
+    "/someDir/something"
+  ],
+  "deleteRemoteFiles":true,
+  "rsyncFlags": "avz"
+}
