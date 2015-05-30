@@ -15,5 +15,6 @@ GPIO.setup(23,GPIO.IN)
 while True:
   if (GPIO.input(22)):
     print("Button 1 Pressed")
-    if (GPIO.input(23)):
+
+if (GPIO.input(23)):
         print("Button 2 Pressed")
