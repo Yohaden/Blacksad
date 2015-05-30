@@ -15,20 +15,11 @@ def Sw01Press(channel):
 def Sw01Release(channel):
     print('This is a edge event callback function!')
     print('Edge detected on channel %s'%channel)
-    print('The SW01 is released')
-def Sw02Press(channel):
-    print('This is a edge event callback function!')
-    print('Edge detected on channel %s'%channel)
-    print('The SW01 is pressed')
-def Sw02Release(channel):
-    print('This is a edge event callback function!')
-    print('Edge detected on channel %s'%channel)
-    print('The SW01 is released')
+    print('The SW02 is pressed')
 
-GPIO.add_event_detect(22, GPIO.RISING, callback=Sw01Press, bouncetime=200)
-GPIO.add_event_detect(22, GPIO.FALLING, callback=Sw01Release, bouncetime=200)
-GPIO.add_event_detect(22, GPIO.RISING, callback=Sw02Press, bouncetime=200)
-GPIO.add_event_detect(22, GPIO.RISING, callback=Sw02Release, bouncetime=200)
+
+GPIO.add_event_detect(22, GPIO.BOTH, callback=Sw01Press, bouncetime=200)
+GPIO.add_event_detect(23, GPIO.BOTH, callback=Sw01Press, bouncetime=200)
 
 try:
     print "Press Ctrl C to quit"
