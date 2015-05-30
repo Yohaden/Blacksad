@@ -19,7 +19,7 @@ def Sw01action(channel):
         print('The SW01 is released')
 
 def Sw02action(channel):
-    if GPIO.input(22):
+    if GPIO.input(23):
         print('This is a edge event callback function!')
         print('Edge detected on channel %s'%channel)
         print('The SW02 is pressed')
