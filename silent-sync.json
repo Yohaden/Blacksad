@@ -3,12 +3,12 @@
   "host": "192.168.1.39",
   "port": 22,
   "username": "pi",
-  "remoteDir": "/home/Blacksad",
+  "remoteDir": "/home/pi/Blacksad",
   "exclude": [
-   "/someDir"
+    "/_img"
   ],
   "include": [
-    "/someDir/something"
+    "/Fritzing"
   ],
   "deleteRemoteFiles":true,
   "rsyncFlags": "avz"
